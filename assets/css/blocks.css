@@ -1,0 +1,49 @@
+/**
+ * Custom block styles
+ */
+
+/* Button styles */
+.is-style-outline-primary {
+  background-color: transparent !important;
+  color: var(--wp--preset--color--primary) !important;
+  border: 2px solid var(--wp--preset--color--primary) !important;
+}
+
+.is-style-outline-primary:hover {
+  background-color: var(--wp--preset--color--primary) !important;
+  color: var(--wp--preset--color--base) !important;
+}
+
+.is-style-outline-secondary {
+  background-color: transparent !important;
+  color: var(--wp--preset--color--secondary) !important;
+  border: 2px solid var(--wp--preset--color--secondary) !important;
+}
+
+.is-style-outline-secondary:hover {
+  background-color: var(--wp--preset--color--secondary) !important;
+  color: var(--wp--preset--color--base) !important;
+}
+
+/* Group styles */
+.is-style-card {
+  background-color: var(--wp--preset--color--base);
+  border: 1px solid var(--wp--preset--color--light-gray);
+  border-radius: 8px;
+  padding: 2rem !important;
+}
+
+.is-style-card-shadow {
+  background-color: var(--wp--preset--color--base);
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  padding: 2rem !important;
+}
+
+/* Paragraph styles */
+.is-style-highlight {
+  background-color: var(--wp--preset--color--light-gray);
+  padding: 1.5rem;
+  border-left: 4px solid var(--wp--preset--color--primary);
+  border-radius: 0 4px 4px 0;
+}
