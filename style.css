@@ -14,18 +14,107 @@ Text Domain: custom-blocks-demo
 Tags: block-patterns, full-site-editing, block-styles, wide-blocks
 */
 
-/* Basic styles */
+
+/* 
+
+@font-face {
+    font-family: 'YourCustomFont';
+    src: url('fonts/yourcustomfont.woff2') format('woff2'),
+         url('fonts/yourcustomfont.woff') format('woff'),
+         url('fonts/yourcustomfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  } */
+
+
+/* Custom styles for A Loja de Pianos Theme */
 a {
-  text-decoration-thickness: 1px !important;
-  text-underline-offset: 0.1em;
+  color: #303030; 
+  transition: color 0.3s ease;
 }
 
-:where(.wp-site-blocks *:focus) {
-  outline-width: 2px;
-  outline-style: solid;
+a:hover {
+  color: #500000; 
 }
 
-/* Typography enhancements */
-h1, h2, h3, h4, h5, h6, p {
-  text-wrap: pretty;
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 600;
+  color: #1a1a1a;
+}
+
+/* Custom button style */
+.wp-block-button__link {
+  background-color: #cf0000; /* Wooden Brown */
+  color: #f5f5f5; /* Ivory White */
+  /* text-transform: uppercase; */
+  font-weight: 600;
+  border-radius: 8px !important;
+  padding: 0.8em 1em !important;
+}
+
+.wp-block-button__link:hover {
+  background-color: #c00000; /* Golden Brass */
+  color: #f5f5f5; /* Ivory White */
+  transition: color 0.3s ease;
+}
+
+/* Custom quote style */
+.wp-block-quote {
+  border-left-color: #d4af37; /* Golden Brass */
+}
+
+/* customizacao a loja de pianos */
+del span.woocommerce-Price-amount{
+  color: #999999;
+  font-weight: bold;
+
+}
+
+span.woocommerce-Price-amount{
+  color: #990000;
+  font-weight: bold;
+}
+
+/* Custom larger price for single product page */
+.loja-pianos-large-price span.woocommerce-Price-amount {
+  font-size: 2em;
+  color: #990000;
+  font-weight: 700;
+  display: block;
+  margin: 15px 0;
+}
+
+.loja-pianos-large-price del span.woocommerce-Price-amount {
+  font-size: 1.5em;
+  color: #999999;
+  text-decoration: line-through;
+  margin-bottom: 5px;
+}
+
+.loja-pianos-large-price ins {
+  text-decoration: none;
+}
+
+.loja-pianos-single-product .summary {
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  margin-bottom: 30px;
+}
+
+/* oferta */
+.woocommerce span.onsale{
+  background-color: #ff0000 !important;
+  color: #f5f5f5;
+  text-transform: uppercase;
+  font-weight: 600;    
+  border-radius: 2em !important;
+  padding:0 20px !important;
+  font-size:.8em !important;
+
+}
+
+.wc-block-grid__product-onsale{
+  background-color: #990000 !important;
+  font-size:.6em !important;
 }
