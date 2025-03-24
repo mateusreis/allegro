@@ -118,11 +118,9 @@ add_action( 'wp_enqueue_scripts', 'custom_blocks_demo_enqueue_styles' );
 add_action( 'enqueue_block_editor_assets', 'custom_blocks_demo_enqueue_styles' );
 
 // Declare WooCommerce support.
-// imporatnte para o tema?
-// add_theme_support( 'woocommerce' );
-// add_theme_support( 'wc-product-gallery-zoom' );
-// add_theme_support( 'wc-product-gallery-lightbox' );
-// add_theme_support( 'wc-product-gallery-slider' );
-
+add_theme_support( 'woocommerce' );
+add_theme_support( 'wc-product-gallery-zoom' );
+add_theme_support( 'wc-product-gallery-lightbox' );
+add_theme_support( 'wc-product-gallery-slider' );
 
 
