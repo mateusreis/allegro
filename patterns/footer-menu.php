@@ -1,7 +1,7 @@
 <?php
 /**
- * Title: Footer Allegro
- * Slug: allegro/footer
+ * Title: Footer Menu Allegro
+ * Slug: allegro/footer-menu
  * Categories: allegro, footer
  */
 ?>
@@ -12,7 +12,7 @@
 <!-- wp:columns -->
 <div class="wp-block-columns"><!-- wp:column -->
     <div class="wp-block-column"><!-- wp:paragraph -->
-    <p><strong>FOOTER </strong></p>
+    <p><strong>FOOTER MENU x</strong></p>
     <!-- /wp:paragraph -->
     
     <!-- wp:paragraph {"fontSize":"small"} -->

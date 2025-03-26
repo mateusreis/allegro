@@ -1,14 +1,14 @@
 <?php
 /**
- * Custom Blocks Demo functions and definitions
+ * Allegro functions and definitions
  *
- * @package Custom_Blocks_Demo
+ * @package Allegro
  * @since 1.0.0
  */
 
 
 
-if ( ! function_exists( 'custom_blocks_demo_setup' ) ) {
+if ( ! function_exists( 'allegro_setup' ) ) {
 	/**
 	 * Sets up theme defaults and registers support for various WordPress features.
 	 *
@@ -16,7 +16,7 @@ if ( ! function_exists( 'custom_blocks_demo_setup' ) ) {
 	 *
 	 * @return void
 	 */
-	function custom_blocks_demo_setup() {
+	function allegro_setup() {
 		// Add support for block styles.
 		add_theme_support( 'wp-block-styles' );
 
@@ -24,7 +24,7 @@ if ( ! function_exists( 'custom_blocks_demo_setup' ) ) {
 		add_editor_style( 'style.css' );
 	}
 }
-add_action( 'after_setup_theme', 'custom_blocks_demo_setup' );
+add_action( 'after_setup_theme', 'allegro_setup' );
 
 /**
  * Register block patterns.
@@ -34,12 +34,12 @@ function custom_blocks_demo_register_block_patterns() {
 	if ( function_exists( 'register_block_pattern_category' ) ) {
 		register_block_pattern_category(
 			'custom-sections',
-			array( 'label' => __( 'Custom Sections', 'custom-blocks-demo' ) )
+			array( 'label' => __( 'Custom Sections', 'allegro-blocks' ) )
 		);
 		
 		register_block_pattern_category(
 			'custom-layouts',
-			array( 'label' => __( 'Custom Layouts', 'custom-blocks-demo' ) )
+			array( 'label' => __( 'Custom Layouts', 'allegro-blocks' ) )
 		);
 	}
 }
@@ -54,7 +54,7 @@ function custom_blocks_demo_register_block_styles() {
 		'core/button',
 		array(
 			'name'  => 'outline-primary',
-			'label' => __( 'Outline Primary', 'custom-blocks-demo' ),
+			'label' => __( 'Outline Primary', 'allegro-blocks' ),
 		)
 	);
 	
@@ -62,7 +62,7 @@ function custom_blocks_demo_register_block_styles() {
 		'core/button',
 		array(
 			'name'  => 'outline-secondary',
-			'label' => __( 'Outline Secondary', 'custom-blocks-demo' ),
+			'label' => __( 'Outline Secondary', 'allegro-blocks' ),
 		)
 	);
 	
@@ -71,7 +71,7 @@ function custom_blocks_demo_register_block_styles() {
 		'core/group',
 		array(
 			'name'  => 'card',
-			'label' => __( 'Card', 'custom-blocks-demo' ),
+			'label' => __( 'Card', 'allegro-blocks' ),
 		)
 	);
 	
@@ -79,7 +79,7 @@ function custom_blocks_demo_register_block_styles() {
 		'core/group',
 		array(
 			'name'  => 'card-shadow',
-			'label' => __( 'Card with Shadow', 'custom-blocks-demo' ),
+			'label' => __( 'Card with Shadow', 'allegro-blocks' ),
 		)
 	);
 	
@@ -88,7 +88,7 @@ function custom_blocks_demo_register_block_styles() {
 		'core/paragraph',
 		array(
 			'name'  => 'highlight',
-			'label' => __( 'Highlight', 'custom-blocks-demo' ),
+			'label' => __( 'Highlight', 'allegro-blocks' ),
 		)
 	);
 }
@@ -100,7 +100,7 @@ add_action( 'init', 'custom_blocks_demo_register_block_styles' );
 function custom_blocks_demo_enqueue_styles() {
 	// Enqueue main stylesheet
 	wp_enqueue_style(
-		'custom-blocks-demo-style',
+		'allegro-blocks-style',
 		get_stylesheet_uri(),
 		array(),
 		wp_get_theme()->get( 'Version' )
@@ -108,7 +108,7 @@ function custom_blocks_demo_enqueue_styles() {
 	
 	// Enqueue custom block styles
 	wp_enqueue_style(
-		'custom-blocks-demo-block-styles',
+		'allegro-blocks-block-styles',
 		get_theme_file_uri( 'assets/css/blocks.css' ),
 		array(),
 		wp_get_theme()->get( 'Version' )
