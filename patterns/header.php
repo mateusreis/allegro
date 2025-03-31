@@ -109,3 +109,61 @@
 <!-- /wp:column --></div>
 <!-- /wp:columns --></div>
 <!-- /wp:group -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- wp:group {"style":{"elements":{"link":{"color":{"text":"var:preset|color|contrast"}}}},"backgroundColor":"secondary","textColor":"contrast","layout":{"type":"constrained"}} -->
+<div class="wp-block-group has-contrast-color has-secondary-background-color has-text-color has-background has-link-color"><!-- wp:columns -->
+<div class="wp-block-columns"><!-- wp:column -->
+<div class="wp-block-column"><!-- wp:paragraph {"align":"center","fontSize":"x-large"} -->
+<p class="has-text-align-center has-x-large-font-size"><strong>asdfasdf 1</strong></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph {"fontSize":"small"} -->
+<p class="has-small-font-size">asdfasdf</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:column -->
+
+<!-- wp:column -->
+<div class="wp-block-column"><!-- wp:paragraph {"align":"center","fontSize":"x-large"} -->
+<p class="has-text-align-center has-x-large-font-size"><strong>asdfasdf</strong> 2</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph {"fontSize":"small"} -->
+<p class="has-small-font-size">asdfasdf</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:column -->
+
+<!-- wp:column -->
+<div class="wp-block-column"><!-- wp:paragraph {"align":"center","fontSize":"x-large"} -->
+<p class="has-text-align-center has-x-large-font-size"><strong>asdfasdf</strong> 3</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph {"fontSize":"small"} -->
+<p class="has-small-font-size">asdfasdf</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:image {"id":401,"sizeSlug":"large","linkDestination":"none"} -->
+<figure class="wp-block-image size-large"><img src="http://piano.local/wp-content/uploads/2025/03/gorillaz-1024x766.jpg" alt="" class="wp-image-401"/></figure>
+<!-- /wp:image --></div>
+<!-- /wp:column --></div>
+<!-- /wp:columns --></div>
+<!-- /wp:group -->

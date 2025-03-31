@@ -14,6 +14,54 @@ Text Domain: allegro
 Tags: block-patterns, full-site-editing, block-styles, wide-blocks
 */
 
+/* custom footer */
+
+.cat-item a{
+  text-decoration: none;
+}
+
+.categories-list {
+  padding:0;
+  font-size: 16px !important;
+  list-style-type:none;
+}
+
+.categories-list ul li{
+  padding-left: 0;
+  list-style-type:none;
+
+}
+
+.categories-list > li > ul:first-of-type {
+  margin-bottom: 20px;
+}
+
+/* .categories-list li.cat-item{
+  margin-bottom: 20px;
+} */
+ 
+.categories-list li ul{
+  padding-left: 0;
+  list-style-type:none;
+}
+
+.categories-list li ul li{
+  padding-left: 0;
+  list-style-type:disc;
+}
+
+.categories-list ul.children{
+  padding-left: 0;
+  margin-left: 20px;
+
+
+}
+
+.bb-white{
+  border-bottom: solid 1px #202020;
+}
+
+
 
 /* 
 
