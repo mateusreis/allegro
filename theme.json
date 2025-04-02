@@ -19,12 +19,12 @@
           "slug": "contrast"
         },
         {
-          "color": "#4A6BFF",
+          "color": "#ff0000",
           "name": "Primary",
           "slug": "primary"
         },
         {
-          "color": "#FF6B4A",
+          "color": "#029100",
           "name": "Secondary",
           "slug": "secondary"
         },
@@ -118,9 +118,9 @@
       "blockGap": "1.5rem",
       "padding": {
         "top": "0",
-        "right": "1.5rem",
+        "right": "0",
         "bottom": "0",
-        "left": "1.5rem"
+        "left": "0"
       }
     },
     "typography": {

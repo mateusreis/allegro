@@ -1629,3 +1629,11 @@ span.woocommerce-Price-amount{
   background-color: #990000 !important;
   font-size:.6em !important;
 }
+
+
+
+
+.wc-block-components-button{
+  background-color: #fc0;
+  color: #000;
+}

@@ -94,6 +94,20 @@ function custom_blocks_demo_register_block_styles() {
 }
 add_action( 'init', 'custom_blocks_demo_register_block_styles' );
 
+
+
+function themeslug_register_patterns() {
+	register_block_pattern( 'allegro/hero', array(
+		'title'      => __( 'Hero', 'themeslug' ),
+		'categories' => array( 'featured' ),
+		'source'     => 'theme',
+		'content'    => '<!-- Block pattern goes here. -->'
+	) );
+}
+add_action( 'init', 'themeslug_register_patterns' );
+
+
+
 /**
  * Enqueue theme CSS files.
  */
@@ -117,10 +131,24 @@ function custom_blocks_demo_enqueue_styles() {
 add_action( 'wp_enqueue_scripts', 'custom_blocks_demo_enqueue_styles' );
 add_action( 'enqueue_block_editor_assets', 'custom_blocks_demo_enqueue_styles' );
 
+/**
+ * Enqueue Font Awesome CSS from CDN.
+ */
+function enqueue_font_awesome() {
+    wp_enqueue_style(
+        'font-awesome',
+        'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css',
+        array(),
+        '6.0.0-beta3'
+    );
+}
+add_action('wp_enqueue_scripts', 'enqueue_font_awesome');
+
+
 // Declare WooCommerce support.
 add_theme_support( 'woocommerce' );
-add_theme_support( 'wc-product-gallery-zoom' );
-add_theme_support( 'wc-product-gallery-lightbox' );
-add_theme_support( 'wc-product-gallery-slider' );
+// add_theme_support( 'wc-product-gallery-zoom' );
+// add_theme_support( 'wc-product-gallery-lightbox' );
+// add_theme_support( 'wc-product-gallery-slider' );
 
 

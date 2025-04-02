@@ -1,10 +1,11 @@
-<!-- wp:paragraph {"align":"center"} -->
-<h2> FOOTER MENU </h2>
-<!-- /wp:paragraph -->
-
-
-
-
+<?php
+/**
+ * Title: Footer loja Allegro
+ * Slug: allegro/footer-loja
+ * Categories: allegro, footer
+ * wp:template-part {"slug":"footer-loja","theme":"allegro"} 
+ */
+?>
 
 <!-- wp:group {"className":"bb-white","style":{"elements":{"link":{"color":{"text":"var:preset|color|light-gray"}}},"color":{"background":"#333333"},"spacing":{"padding":{"top":"var:preset|spacing|70","bottom":"var:preset|spacing|70","left":"var:preset|spacing|small","right":"var:preset|spacing|small"}},"background":{"backgroundImage":{"url":"http://piano.local/wp-content/uploads/2025/03/bg_bandeira.webp","id":29734,"source":"file","title":"bg_bandeira"},"backgroundSize":"cover","backgroundAttachment":"scroll","backgroundPosition":"0% 0%"}},"textColor":"light-gray","layout":{"type":"constrained","justifyContent":"center","contentSize":"1024px"}} -->
 <div class="wp-block-group bb-white has-light-gray-color has-text-color has-background has-link-color" style="background-color:#333333;padding-top:var(--wp--preset--spacing--70);padding-right:var(--wp--preset--spacing--small);padding-bottom:var(--wp--preset--spacing--70);padding-left:var(--wp--preset--spacing--small)"><!-- wp:columns -->
