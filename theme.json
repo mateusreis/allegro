@@ -37,7 +37,12 @@
           "color": "#767676",
           "name": "Medium Gray",
           "slug": "medium-gray"
-        }
+        },
+        {
+          "color": "#990000",
+          "name": "Primary Dark",
+          "slug": "primary-dark"
+        }        
       ]
     },
     "layout": {
