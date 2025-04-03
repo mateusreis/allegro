@@ -142,10 +142,10 @@
         },
         "spacing": {
           "padding": {
-            "top": "0.75rem",
-            "right": "1.5rem",
-            "bottom": "0.75rem",
-            "left": "1.5rem"
+            "top": "0",
+            "right": "0",
+            "bottom": "0",
+            "left": "0"
           }
         },
         "typography": {
