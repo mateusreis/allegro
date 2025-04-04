@@ -4,6 +4,8 @@
  * Slug: allegro/header-store
  * Categories: allegro, header
  */
+$whatsapp_number = get_option( 'custom_whatsapp_phonenumber' );
+
 ?>
 
 
@@ -39,7 +41,7 @@
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph {"align":"left","style":{"typography":{"lineHeight":"0.5"}}} -->
-<p class="has-text-align-left" style="line-height:0.5">(11) 950209096</p>
+<p class="has-text-align-left" style="line-height:0.5"><?php echo esc_html( $whatsapp_number ); ?></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:column --></div>
 <!-- /wp:columns --></div>

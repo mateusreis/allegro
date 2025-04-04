@@ -156,6 +156,21 @@ function custom_loop_columns() {
     return 4; // Set number of columns to 4
 }
 
+// Set number of products per row in WooCommerce product grids
+add_filter('woocommerce_output_related_products_args', 'custom_related_products_args', 1111);
+function custom_related_products_args($args) {
+    $args['columns'] = 4; // Set columns to 4
+    $args['posts_per_page'] = 4; // Show 4 related products
+    return $args;
+}
+
+// Set number of cross-sells products per row
+add_filter('woocommerce_cross_sells_columns', 'custom_cross_sells_columns');
+function custom_cross_sells_columns($columns) {
+    return 4;
+}
+
+
 // // Optional: Adjust products per page to be divisible by 4
 // add_filter('loop_shop_per_page', 'custom_products_per_page', 999);
 // function custom_products_per_page() {
