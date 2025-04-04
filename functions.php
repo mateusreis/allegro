@@ -151,4 +151,15 @@ add_theme_support( 'woocommerce' );
 // add_theme_support( 'wc-product-gallery-lightbox' );
 // add_theme_support( 'wc-product-gallery-slider' );
 
+add_filter('loop_shop_columns', 'custom_loop_columns', 999);
+function custom_loop_columns() {
+    return 4; // Set number of columns to 4
+}
+
+// // Optional: Adjust products per page to be divisible by 4
+// add_filter('loop_shop_per_page', 'custom_products_per_page', 999);
+// function custom_products_per_page() {
+//     return 12; // Show 12 products per page (divisible by 4)
+// }
+
 
