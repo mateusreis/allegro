@@ -116,27 +116,14 @@ Ovation Bookstore is distributed under the terms of the GNU GPL
 
 */
 
-a{
+/* a{
   -webkit-transition: all .2s ease-in-out;
   transition: all .2s ease-in-out;
 }
 a:focus,
 button:focus{
   outline: 2px solid blue !important;
-}
-
-
-
-
-
-
-.wp-block-navigation-item__label, .wp-block-navigation-item__content{
-  color:#f90;
-}
-
-.wp-block-navigation-item__label:hover{
-  color:#f00;
-}
+} */
 
 
 
@@ -145,47 +132,92 @@ button:focus{
 
 
 
+
+  /* .wp-block-navigation .has-child:not(.open-on-click):hover>.wp-block-navigation__submenu-container{
+    margin-top: 15px;
+  } */
+
+
+  /* .wp-block-navigation__responsive-container{
+    background-color: #282835;
+    color: #000;
+  } */
+
+  
 
 /*navigation css*/
 @media screen and (min-width:1000px){
+
+
+  .product-menu{
+    color: #fff;
+  }
+  
+  .product-menu a{
+    color: #fff;
+  }  
+  
+  .product-menu a:hover{
+    /* color:#f90; */
+  }  
+  
+  .wp-block-navigation-item__content a,
+  .wp-block-navigation-item__label{
+    color:var(--wp--preset--color--white);
+  }
+  
+  .wp-block-navigation-item__label a:hover{
+    /* color:#f90; */
+  }
+
+  
+
   .wp-block-navigation ul li:hover a,
   .wp-block-navigation ul li:hover a,
   .wp-block-navigation .current-menu-item a{
-      color: var(--wp--preset--color--primary) !important;
+      /* color: var(--wp--preset--color--primary) !important; */
       /* font-weight: 700 !important; */
   }
   .wp-block-navigation ul li:hover .wp-block-navigation__submenu-icon:before,
   .wp-block-navigation ul li:hover .wp-block-navigation__submenu-icon:before,
   .wp-block-navigation .current-menu-item .wp-block-navigation__submenu-icon:before{
-      color: var(--wp--preset--color--primary);
+      color: var(--wp--preset--color--white);
   }
   .wp-block-navigation ul ul li:hover a,
   .wp-block-navigation ul ul li:hover a,
   .wp-block-navigation__submenu-container .current-menu-item a{
-      color: var(--wp--preset--color--primary) !important;
-      font-weight: 400 !important;
+      color: var(--wp--preset--color--light-gray) !important;
   }
   .wp-block-navigation .has-child .wp-block-navigation__submenu-container{  
-      border-top: 2px solid var(--wp--preset--color--primary);
-      border-bottom: 2px solid var(--wp--preset--color--primary);
-      box-shadow: 2px 2px 8px #cfc8d8;
+    background-color: #282835;
+      /* border-top: 2px solid var(--wp--preset--color--primary);
+      border-bottom: 2px solid var(--wp--preset--color--primary); */
+      box-shadow: 2px 2px 8px #000;
   }
-  .wp-block-navigation ul ul li a{
-      border-bottom: 1px solid var(--wp--preset--color--border-color);
-      color: var(--wp--preset--color--primary) !important;
-  }
+  /* .wp-block-navigation ul ul li a{
+      /* border-bottom: 1px solid var(--wp--preset--color--border-color); */
+      color: var(--wp--preset--color--white) !important;
+  } 
+  */
   .wp-block-navigation ul li:last-child a{
       border-bottom: none;
   }
   .wp-block-navigation ul ul li a:hover,
   .wp-block-navigation ul ul li a:focus,
   .wp-block-navigation__submenu-container .current-menu-item a{
-      background-color: var(--wp--preset--color--primary-light) !important;
+      background-color: #000 !important;
   }
+
+  .wp-block-navigation .wp-block-navigation__submenu-icon {
+    color: #fff;
+
+  }  
   .wp-block-navigation .wp-block-navigation__submenu-icon svg{
+    color: #fff;
       display: none;
   }
   .wp-block-navigation .wp-block-navigation__submenu-icon:before{
+      color: #fff;
       content: "\f067";
       font-size: 11px;
       font-family: 'Font Awesome 5 Free';
@@ -199,14 +231,17 @@ button:focus{
 .wp-block-navigation__responsive-container.is-menu-open .wp-block-navigation__responsive-container-content .wp-block-page-list,
 .wp-block-navigation__responsive-container.is-menu-open .wp-block-navigation__responsive-container-content .wp-block-navigation__container{
   width: 100%;
-  border: 1px solid var(--wp--preset--color--border-color);
+  color: #d00;
+  /* border: 1px solid var(--wp--preset--color--border-color);
   border-top-color: var(--wp--preset--color--primary);
-  border-bottom-color: var(--wp--preset--color--primary);
+  border-bottom-color: var(--wp--preset--color--primary); */
+
 }
 .wp-block-navigation__responsive-container.is-menu-open li a,
 .wp-block-navigation__responsive-container.is-menu-open li li a,
 .wp-block-navigation__responsive-container.is-menu-open li li:last-child a{
   /* border-bottom: 1px solid var(--wp--preset--color--medium-gray); */
+  color: #d00;
 }
 .wp-block-navigation__responsive-container.is-menu-open li:last-child a{
   border-bottom: none;
@@ -214,29 +249,54 @@ button:focus{
 .wp-block-navigation__responsive-container.is-menu-open li a:hover,
 .wp-block-navigation__responsive-container.is-menu-open li a:focus,
 .wp-block-navigation__responsive-container.is-menu-open li.current-menu-item a{
-  background-color: var(--wp--preset--color--primary-light) !important;
+  background-color: #f4bc16 !important;
   color: #000 !important;
 }
 .wp-block-navigation .wp-block-navigation__submenu-icon{
   background: transparent;
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
 @media screen and (max-width:999px) {
+
+    .wp-block-navigation__responsive-container-open:not(.always-shown) {
+      display: block;
+      color: white;
+  }
+
   .wp-block-navigation__responsive-container,
   .wp-block-navigation__responsive-container .wp-block-navigation__responsive-container-content{
       display: none;
   }
 
-  .wp-block-navigation__responsive-container-close svg,
+
   .wp-block-navigation__responsive-container-open svg{
       width: 26px;
       height: 26px;
+      fill: #fff;
   }
-  
+
+  .wp-block-navigation__responsive-container-close svg{ 
+      width: 26px;
+      height: 26px;
+      fill: #000;
+    }
 
   .wp-block-navigation__responsive-container-close{
       top: 0;
       right: 20px;
+      fill: #000;
   }
 
   .wp-block-navigation__responsive-container-open:not(.always-shown){
@@ -269,9 +329,13 @@ button:focus{
   .wp-block-navigation .wp-block-navigation__responsive-container-content ul.wp-block-navigation__container li.wp-block-navigation-item a {
       width: calc( 100% - 48px );
       padding: 12px 24px 12px;
-      line-height: 30px;
+      line-height: 5px;
       text-align: left;
   }
+
+  .wp-block-navigation .wp-block-navigation__responsive-container-content ul.wp-block-navigation__container li.wp-block-navigation-item a:hover {
+    background-color: #f90;
+}
 
   /*
   * Submenu Css
@@ -285,7 +349,7 @@ button:focus{
   }
   .wp-block-navigation .wp-block-navigation__responsive-container-content ul.wp-block-navigation__container li.wp-block-navigation-item ul.wp-block-navigation__submenu-container li.wp-block-navigation-item a{
       gap: 3px;
-      font-weight: 300 !important;
+      font-weight: 400 !important;
   }
   .wp-block-navigation .wp-block-navigation__responsive-container-content ul.wp-block-navigation__container li.wp-block-navigation-item ul.wp-block-navigation__submenu-container li.wp-block-navigation-item a:before {
       content: '--';
@@ -1727,3 +1791,12 @@ span.woocommerce-Price-amount{
 .wp-block-query-pagination{
   margin:80px 0 40px 0!important;
 }
+
+/* product-menu */
+/* 
+
+
+
+
+
+ */
