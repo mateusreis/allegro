@@ -1,16 +1,18 @@
 <?php
-
 /**
  * Title: Header allegro
  * Slug: allegro/header-store
  * Categories: allegro, header
  */
-
 ?>
 
+
 <!-- wp:group {"style":{"spacing":{"padding":{"top":"0","bottom":"0","left":"0","right":"0"}}},"layout":{"type":"constrained","contentSize":"100%"}} -->
-<div class="wp-block-group" style="padding-top:0;padding-right:0;padding-bottom:0;padding-left:0"><!-- wp:group {"backgroundColor":"contrast","layout":{"type":"constrained","contentSize":"100%"}} -->
-<div class="wp-block-group has-contrast-background-color has-background"><!-- wp:group {"align":"full","style":{"elements":{"link":{"color":{"text":"var:preset|color|base"}}}},"textColor":"base","layout":{"type":"flex","flexWrap":"wrap","justifyContent":"center"}} -->
+<div class="wp-block-group" alt="header" style="padding-top:0;padding-right:0;padding-bottom:0;padding-left:0">
+
+<!-- wp:group {"backgroundColor":"contrast","layout":{"type":"constrained","contentSize":"100%"}} -->
+<div class="wp-block-group has-contrast-background-color has-background">
+    <!-- wp:group {"align":"full","style":{"elements":{"link":{"color":{"text":"var:preset|color|base"}}}},"textColor":"base","layout":{"type":"flex","flexWrap":"wrap","justifyContent":"center"}} -->
 <div class="wp-block-group alignfull has-base-color has-text-color has-link-color"><!-- wp:group {"style":{"spacing":{"padding":{"top":"0","bottom":"0","left":"0","right":"0"},"margin":{"top":"0","bottom":"0"},"blockGap":"0"},"layout":{"selfStretch":"fill","flexSize":null}},"layout":{"type":"flex","flexWrap":"nowrap","justifyContent":"left"}} -->
 <div class="wp-block-group" style="margin-top:0;margin-bottom:0;padding-top:0;padding-right:0;padding-bottom:0;padding-left:0"><!-- wp:columns {"style":{"layout":{"selfStretch":"fill","flexSize":null}}} -->
 <div class="wp-block-columns"><!-- wp:column {"verticalAlignment":"center","width":"40%"} -->
@@ -21,6 +23,7 @@
 <div class="wp-block-column is-vertically-aligned-center" style="flex-basis:60%"><!-- wp:search {"label":"","showLabel":false,"placeholder":"Search products…","buttonText":"BUSCAR","buttonPosition":"button-inside","query":{"post_type":"product"},"style":{"typography":{"textTransform":"uppercase","fontStyle":"normal","fontWeight":"800"}},"backgroundColor":"primary","namespace":"woocommerce/product-search"} /--></div>
 <!-- /wp:column --></div>
 <!-- /wp:columns --></div>
+
 <!-- /wp:group -->
 
 <!-- wp:group {"style":{"spacing":{"padding":{"top":"0","bottom":"0","left":"0","right":"0"}},"layout":{"selfStretch":"fill","flexSize":null}},"layout":{"type":"flex","flexWrap":"nowrap","justifyContent":"center"}} -->

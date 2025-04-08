@@ -192,18 +192,15 @@
         "spacing": {
           "margin": {
             "top": "1rem",
-            "bottom": "1rem"
+            "right": "1rem",
+            "bottom": "1rem",
+            "left": "1rem"
           }
         }
       },
       "core/group": {
         "spacing": {
-          "padding": {
-            "top": "1rem",
-            "right": "1rem",
-            "bottom": "1rem",
-            "left": "1rem"
-          }
+          "padding": false
         }
       }
     }
