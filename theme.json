@@ -24,6 +24,11 @@
           "slug": "primary"
         },
         {
+          "color": "#990000",
+          "name": "Primary Dark",
+          "slug": "primary-dark"
+        },        
+        {
           "color": "#029100",
           "name": "Secondary",
           "slug": "secondary"
@@ -34,15 +39,15 @@
           "slug": "light-gray"
         },
         {
-          "color": "#767676",
+          "color": "#999999",
           "name": "Medium Gray",
           "slug": "medium-gray"
         },
         {
-          "color": "#990000",
-          "name": "Primary Dark",
-          "slug": "primary-dark"
-        }        
+          "color": "#333333",
+          "name": "Dark Gray",
+          "slug": "dark-gray"
+        }     
       ]
     },
     "layout": {
