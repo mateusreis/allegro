@@ -1,16 +1,15 @@
 <?php
+
 /**
- * Title: Header Allegro Store
+ * Title: Header allegro
  * Slug: allegro/header-store
  * Categories: allegro, header
  */
-$whatsapp_number = get_option( 'custom_whatsapp_phonenumber' );
 
 ?>
 
-
-
-<!-- wp:group {"backgroundColor":"contrast","layout":{"type":"constrained","contentSize":"100%"}} -->
+<!-- wp:group {"style":{"spacing":{"padding":{"top":"0","bottom":"0","left":"0","right":"0"}}},"layout":{"type":"constrained","contentSize":"100%"}} -->
+<div class="wp-block-group" style="padding-top:0;padding-right:0;padding-bottom:0;padding-left:0"><!-- wp:group {"backgroundColor":"contrast","layout":{"type":"constrained","contentSize":"100%"}} -->
 <div class="wp-block-group has-contrast-background-color has-background"><!-- wp:group {"align":"full","style":{"elements":{"link":{"color":{"text":"var:preset|color|base"}}}},"textColor":"base","layout":{"type":"flex","flexWrap":"wrap","justifyContent":"center"}} -->
 <div class="wp-block-group alignfull has-base-color has-text-color has-link-color"><!-- wp:group {"style":{"spacing":{"padding":{"top":"0","bottom":"0","left":"0","right":"0"},"margin":{"top":"0","bottom":"0"},"blockGap":"0"},"layout":{"selfStretch":"fill","flexSize":null}},"layout":{"type":"flex","flexWrap":"nowrap","justifyContent":"left"}} -->
 <div class="wp-block-group" style="margin-top:0;margin-bottom:0;padding-top:0;padding-right:0;padding-bottom:0;padding-left:0"><!-- wp:columns {"style":{"layout":{"selfStretch":"fill","flexSize":null}}} -->
@@ -41,7 +40,7 @@ $whatsapp_number = get_option( 'custom_whatsapp_phonenumber' );
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph {"align":"left","style":{"typography":{"lineHeight":"0.5"}}} -->
-<p class="has-text-align-left" style="line-height:0.5"><?php echo esc_html( $whatsapp_number ); ?></p>
+<p class="has-text-align-left" style="line-height:0.5">5511998315697</p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:column --></div>
 <!-- /wp:columns --></div>
@@ -68,7 +67,7 @@ $whatsapp_number = get_option( 'custom_whatsapp_phonenumber' );
 <!-- /wp:group --></div>
 <!-- /wp:group -->
 
-
 <!-- wp:group {"style":{"spacing":{"margin":{"top":"0","bottom":"0"}},"color":{"background":"#282835"}},"layout":{"type":"constrained"}} -->
 <div class="wp-block-group has-background" style="background-color:#282835;margin-top:0;margin-bottom:0"><!-- wp:navigation {"ref":29777,"metadata":{"ignoredHookedBlocks":["woocommerce/customer-account"]},"className":"product-menu"} /--></div>
+<!-- /wp:group --></div>
 <!-- /wp:group -->

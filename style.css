@@ -1833,3 +1833,24 @@ nav.woocommerce-breadcrumb {
     font-size: 0.75em !important; /* Reduced from 0.85em */
     opacity: 0.8; /* Added for subtle appearance */
 }
+
+
+ /* bloco do .loja-pianos-large-price */
+
+ .woocommerce ul.products.columns-5 li.product  {
+
+  background-color: #f00;
+  padding: 10px;
+}
+
+
+.woocommerce ul.products.columns-5 li.product, .woocommerce-page ul.products.columns-5 li.product {
+
+  background-color: #f90;
+}
+
+.woocommerce ul.products li.product .button {
+  display: inline-block;
+  margin-top: 1em;
+  width: 100%;
+}
