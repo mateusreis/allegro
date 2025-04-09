@@ -14,6 +14,17 @@ Text Domain: allegro
 Tags: block-patterns, full-site-editing, block-styles, wide-blocks
 */
 
+/* fix no gap do form de botao comprar da single product */
+
+.woocommerce div.product form.cart {
+  margin-bottom: 10px;
+}
+
+.wp-block-woocommerce-add-to-cart-form .variations_button>.single_add_to_cart_button, 
+.wp-block-woocommerce-add-to-cart-form form.cart>.single_add_to_cart_button {
+    grid-column: 1 / 3;
+}
+
 /* custom footer */
 
 .cat-item a{

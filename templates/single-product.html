@@ -1,5 +1,12 @@
+
+
+
 <!-- wp:pattern {"slug":"allegro/header-store"} /-->
 
+
+
+
+		
 <!-- wp:group {"tagName":"main","style":{"spacing":{"margin":{"top":"var:preset|spacing|50"}}},"layout":{"type":"constrained"}} -->
 <main class="wp-block-group" style="margin-top:var(--wp--preset--spacing--50)">
 	<!-- wp:woocommerce/breadcrumbs /-->
@@ -13,11 +20,13 @@
 		</div>
 		<!-- /wp:column -->
 
+
+
 		<!-- wp:column -->
 		<div class="wp-block-column">
 
 
-
+			<div class="wp-block-allegro">
 
 			<!-- wp:woocommerce/product-rating {"isDescendentOfSingleProductTemplate":true} /-->
 
@@ -35,13 +44,18 @@
 				<div class="wp-block-group">
 
 
-					<!-- wp:post-terms {"term":"product_cat","prefix":"Category: "} /-->
+					<!-- post-terms {"term":"product_cat","prefix":"Category: "} /-->
 
-					<!-- wp:post-terms {"term":"product_tag","prefix":"Tags: "} /-->
+					<!-- post-terms {"term":"product_tag","prefix":"Tags: "} /-->
 				</div>
 				<!-- /wp:group -->
 			</div>
-			<!-- /wp:woocommerce/product-meta -->
+
+			<!-- /wp:woocommerce/product-meta -->			
+
+			</div> <!-- allegro -->
+
+
 		</div>
 		<!-- /wp:column -->
 	</div>
